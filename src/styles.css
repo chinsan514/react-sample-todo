@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+}
+
+input {
+  border-radius: 16px; /* 角を丸くする */
+  border: none; /* テキストボックスの枠線を無くす */
+  padding: 6px 16px; /* 内側が詰まりすぎなので 内側の余白設けて余裕を付ける (上下余白 左右余白) */
+  outline: none; /* 入力フォーカスを当てると、テキストボックスの枠線が出るのを枠線無くす */
+}
+
+button {
+  /* 追加したCSS [ボタン] */
+  border-radius: 16px; /* 角を丸くする */
+  border: none; /* ボタンの枠線を無くす */
+  padding: 4px 16px; /* 内側が詰まりすぎなので 内側の余白設けて余裕を付ける (上下余白 左右余白) */
+}
+
+button:hover {
+  /* 追加したCSS [ボタンにマウス当たった時] */
+  background-color: #ff7fff; /* 紫色 */
+  color: #fff; /* 白文字 */
+  cursor: pointer; /* マウスカーソルを 指のカーソルに変更 */
+}
+
+li {
+  /* 追加したCSS [li リストタグ] */
+  margin-right: 8px; /* TODOの各項目の文字とボタンの隙間がないので、余白を付与 */
+}
+
+.input-area {
+  /* 追加したCSS  [入力エリア] */
+  background-color: #c1ffff; /* 背景色　水色 */
+  width: 400px; /* 横幅 */
+  height: 30px; /* 高さ */
+  padding: 8px; /* 内側の余白 */
+  margin: 8px; /* 外側の余白 */
+  border-radius: 8px; /* 角を丸くする */
+}
+
+.incomplete-area {
+  /* 追加したCSS　[未完了エリア]*/
+  background-color: #c6ffe2; /* 背景色　薄緑色 */
+  width: 400px; /* 横幅 */
+  min-height: 200px; /* 最小限の高さ (TODOが何個入ってくるか不明のため) */
+  padding: 8px; /* 内側の余白 */
+  margin: 8px; /* 外側の余白 */
+  border-radius: 8px; /* 角を丸くする */
+}
+
+.complete-area {
+  /* 追加したCSS　[完了エリア] */
+  background-color: #ffffe0; /* 背景色　薄黄色 */
+  width: 400px; /* 横幅 */
+  min-height: 200px; /* 最小の高さ (TODOが何個入ってくるか不明のため) */
+  padding: 8px; /* 内側の余白 */
+  margin: 8px; /* 外側の余白 */
+  border-radius: 8px; /* 角を丸くする */
+}
+
+.title {
+  /* 追加したCSS　[タイトル (未完了のTODO、完了したTODO)] */
+  text-align: center; /* 文字のセンター寄せ */
+  margin-top: 0; /* 文字の上の空間が空きすぎなので、０設定で消去 */
+  font-weight: bold; /* タイトルらしく、太字に */
+  color: #666; /* タイトル文字の主張が強いので、文字色を少し薄くする */
+}
+
+.list-row {
+  /* 追加したCSS　[リストの並び] */
+  display: flex; /* 改行しない TODOの文字とボタンを横並びにする */
+  align-items: center; /* 各項目の上下がズレてるので、上下の中央寄せで横一列に並べる */
+  padding-bottom: 4px; /* １行１行の隙間がないので、下側の余白を付与 */
+}
